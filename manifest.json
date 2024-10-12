@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Persistent Notes with History",
+    "description": "A notes extension with reminders and history of deleted notes.",
+    "version": "1.0",
+    "permissions": ["storage", "notifications", "alarms"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon128.png"
+    },
+    "icons": {
+      "128": "icon128.png"
+    }
+  }
+  

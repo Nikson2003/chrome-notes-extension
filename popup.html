@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Extension</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Notes & Reminders</h1>
+
+    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+    <input type="datetime-local" id="reminderTime" />
+    <button id="saveNote">Save Note</button>
+
+    <h2>Saved Notes</h2>
+    <ul id="notesList"></ul>
+
+    <button id="viewHistory">View History</button>
+
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Deleted Notes History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
